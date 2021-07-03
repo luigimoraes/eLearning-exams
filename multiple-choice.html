@@ -43,65 +43,89 @@
       <div class="row">
         <div class="col-12">
           <header>
-            <h2>Criar prova de múltipla escolha</h2>
+            <h2>Prova de múltipla escolha</h2>
           </header>
           
           <button id="add-question"
             class="btn btn-primary">
             Adicionar questão
           </button>
+          
+          <button id="save-test"
+            class="btn btn-secondary">
+            Salvar prova
+          </button>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12">
+          <div id="test">
+            <div id="base-question" 
+              class="card question">
+              <h5 class="card-title">X. Exemplo</h5>
+              <ol class="card-body list-group">
+                <li class="list-group-item form-check">
+                  <input type="radio" 
+                    id="q1o1" 
+                    class="form-check-input"
+                    name="questionOption"
+                    value="q1o1">
+                  <label class="form-check-label option-text" 
+                    for="q1o1">Opção 01</label>
+                </li>
+              
+                <li class="list-group-item form-check">
+                  <input type="radio" 
+                    id="q1o2"
+                    class="form-check-input" 
+                    name="questionOption"
+                    value="q1o2">
+                  <label class="form-check-label option-text" 
+                    for="q1o2">Opção 02</label>
+                </li>
+              
+                <li class="list-group-item form-check">
+                  <input type="radio" 
+                    id="q1o3" 
+                    class="form-check-input" 
+                    name="questionOption"
+                    value="q1o3">
+                  <label class="form-check-label option-text" 
+                    for="q1o3">Opção 03</label>
+                </li>
+              
+                <li class="list-group-item form-check">
+                  <input type="radio" 
+                    id="q1o4" 
+                    class="form-check-input" 
+                    name="questionOption"
+                    value="q1o4">
+                  <label class="form-check-label option-text" 
+                    for="q1o4">Opção 04</label>
+                </li>
+              
+                <li class="list-group-item form-check question-option">
+                  <input type="radio" 
+                    id="q1o5" 
+                    class="form-check-input" 
+                    name="questionOption"
+                    value="q1o5">
+                  <label class="form-check-label option-text" 
+                    for="q1o5">Opção 05</label>
+                </li>
+              </ol>
             
-          <div class="card question">
-            <h5 class="card-title">X. Questão exemplo</h5>
-            <ol class="card-body list-group">
-              <li class="list-group-item form-check">
-                <input type="radio" 
-                  id="q1o1" 
-                  class="form-check-input" 
-                  value="q1o1">
-                <label class="form-check-label option-text" 
-                  for="q1o1">Questão X Opção 01</label>
-              </li>
-              
-              <li class="list-group-item form-check">
-                <input type="radio" 
-                  id="q1o2"
-                  class="form-check-input" 
-                  value="q1o2">
-                <label class="form-check-label option-text" 
-                  for="q1o2">Questão X Opção 02</label>
-              </li>
-              
-              <li class="list-group-item form-check">
-                <input type="radio" 
-                  id="q1o3" 
-                  class="form-check-input" 
-                  value="q1o3">
-                <label class="form-check-label option-text" 
-                  for="q1o3">Questão X Opção 03</label>
-              </li>
-              
-              <li class="list-group-item form-check">
-                <input type="radio" 
-                  id="q1o4" 
-                  class="form-check-input" 
-                  value="q1o4">
-                <label class="form-check-label option-text" 
-                  for="q1o4">Questão X Opção 04</label>
-              </li>
-              
-              <li class="list-group-item form-check question-option">
-                <input type="radio" 
-                  id="q1o5" 
-                  class="form-check-input" 
-                  value="q1o5">
-                <label class="form-check-label option-text" 
-                  for="q1o5">Questão X Opção 05</label>
-              </li>
-            </ol>
-            <div class="btn-group">
-              <button class="edit-question btn btn-info btn-sm"><i data-feather="edit"></i>Editar questão</button>
-              <button class="save-question btn btn-secondary btn-sm"><i data-feather="save"></i>Salvar questão</button>
+              <div class="btn-group">
+                <button class="edit-question btn btn-info btn-sm">
+                  <i data-feather="edit"></i>
+                  Editar questão
+                </button>
+                <button class="delete-question btn btn-danger btn-sm">
+                  <i data-feather="trash-2"></i>
+                  Apagar questão
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -115,6 +139,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
       crossorigin="anonymous"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="./public/script.js"></script>
+    <script src="./public/tests.js"></script>
   </body>
 </html>

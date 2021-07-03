@@ -59,10 +59,16 @@ div.col-12 {
   color: #FFE3D8;
 }
 
+div.question {
+  padding: 5%;
+  margin-bottom: 3vh;
+}
+
 input::placeholder { font-style: italic; }
 
 nav.navbar { background-color: hsl(246, 76%, 9%); }
 
 label.option-text { font-size: 85%; }
 
+button#save-test,
 button#add-question { margin-bottom: 3vh; }
