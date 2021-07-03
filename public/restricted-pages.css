@@ -1,0 +1,25 @@
+* {
+  color: #FFEDA3;
+}
+
+h2 { text-align: center; }
+
+a { color: #FFEDA3; }
+
+main {
+  height: 100vh;
+  background-color: #232323;
+}
+
+div.col-12 {
+  padding: 3%;
+}
+
+div.card {
+  background-color: rgb(17.5%, 17.5%, 17.5%);
+}
+
+a.list-group-item {
+  background-color: rgb(19.5%, 19.5%, 19.5%);
+  color: #FFEDA3;
+}
