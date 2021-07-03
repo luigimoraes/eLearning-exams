@@ -1,25 +1,31 @@
-* {
-  color: #FFEDA3;
-}
+* { color: #FFE3D8; }
 
 h2 { text-align: center; }
 
-a { color: #FFEDA3; }
+a { color: #FFE3D8; }
 
 main {
   height: 100vh;
-  background-color: #232323;
+  background-color: #0A043C;
 }
 
-div.col-12 {
-  padding: 3%;
+svg {
+  width: 17;
+  height: 17;
+  margin-right: 3%;
 }
 
-div.card {
-  background-color: rgb(17.5%, 17.5%, 17.5%);
+div.col-12 { padding: 3%; }
+
+.card {
+  background-color: hsla(197, 95%, 22%, 0.5);
 }
 
 a.list-group-item {
-  background-color: rgb(19.5%, 19.5%, 19.5%);
-  color: #FFEDA3;
+  background-color: hsla(202, 95%, 22%, 0.5);
+  color: #FFE3D8;
+}
+
+nav.navbar {
+  background-color: hsl(246, 76%, 9%);
 }
