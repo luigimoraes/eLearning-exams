@@ -10,14 +10,14 @@ function createNewQuestion(e){
   
   question.removeAttribute("id");
   question.setAttribute("value", questionValue+1);
-  question.children[2].children[1].addEventListener("click", deleteQuestion);
+  question.children[2].addEventListener("click", deleteQuestion);
   
   questionValue += 1;
   test.appendChild(question);
 }
 
 function deleteQuestion(e){
-  e.target.parentNode.parentNode.remove();
+  e.target.parentNode.remove();
   questionValue -= 1;
 }
 
