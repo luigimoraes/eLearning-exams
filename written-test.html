@@ -46,7 +46,35 @@
             <h2>Prova discursiva</h2>
           </header>
           
+           <button id="add-question"
+            class="btn btn-primary">
+            Adicionar questão
+          </button>
           
+          <button id="save-test"
+            class="btn btn-secondary">
+            Salvar prova
+          </button>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12">
+          <div id="test">
+            <div id="base-question" 
+              class="card question"
+              value=1>
+              <h5 class="card-title"
+                contenteditable="true">X. Exemplo</h5>
+              <textarea id="answerField"
+                rows="5"/>
+              
+              <button class="delete-question btn btn-danger btn-sm">
+                <i data-feather="trash-2"></i>
+                Apagar questão
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
