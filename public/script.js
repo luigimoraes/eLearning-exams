@@ -4,47 +4,47 @@ const saveExamButton = document.querySelector("#save-exam");
 const baseQuestion = document.querySelector("#base-question");
 const exam = document.querySelector("#exam");
 const questionsArray = document.getElementsByClassName("question");
-let questionValue = baseQuestion.getAttribute("value");
+let questionNumber = baseQuestion.getAttribute("value");
 
 function createNewQuestion(e){
   const question = baseQuestion.cloneNode(true);
-  questionValue = parseInt(questionValue);
+  questionNumber = parseInt(questionNumber);
   
   question.removeAttribute("id");
-  question.setAttribute("value", questionValue+1);
+  question.setAttribute("value", questionNumber+1);
   question.children[2].addEventListener("click", deleteQuestion);
   
-  questionValue += 1;
-  test.appendChild(question);
+  questionNumber += 1;
+  exam.appendChild(question);
 }
 
 function deleteQuestion(e){
   e.target.parentNode.remove();
-  questionValue -= 1;
+  questionNumber -= 1;
 }
 
 function saveAsJSON(e){
-  let obj = {
+  let examObject = {
     title: "Titulo da prova",
-    questions: []
+    questions: ["test", "test3"]
   };
-  let options = [];
+  examObject.title = exam.children[0].textContent;
   
-  obj.title = test.children[0].textContent;
-  
-  obj.questions = Array.from(questionsArray).map(el => {
+  examObject.questions = Array.from(questionsArray).map(question => {
     return {
-      number: el.value,
-      text: el.children[0].textContent,
-      options: Array.from(el.children[1]).map(li => {
-        return {
-          text: li.children[1].textContent
-        }
-      })
+      number: question.value,
+      text: question.children[0].textContent,
+      options: getListItems(question.children[1])
     };
   });
   
-  console.log(obj.questions[1].options);
+  console.log(JSON.stringify(examObject));
+}
+
+function getListItems(ol){
+  return Array.from(ol.children).map(li => {
+    return { text: li.textContent }
+  });
 }
 
 addQuestionButton.addEventListener("click", createNewQuestion);
